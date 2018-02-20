@@ -77,16 +77,16 @@
     var arrayHighestToLowest = [];
     function mySort(array, callback){
         // completa aqui
-        for (var i = 0; i < array.length; i) {
+        for (var i = 1; i < array.length; i) {
           //El arreglo no incrementa porque al hacer un splice en la línea 89, el siguiente elemento a comparar es 0, ya que el anterior fue borrado.
           for (var j = 0; j < array.length; j++) {
             console.log(array[i]);
             console.log(array[j]);
 
-            callback(array[i],array[j])//Pasando como parametro el 1er elemento para comparar con el resto de los elementos del array.
+            callback(array[i],array[j+1])//Pasando como parametro el 1er elemento para comparar con el resto de los elementos del array.
           }
-          console.log(array[i]);
-          array.splice(i, 1)//Borrando al elemento que ya se comparo con el resto del arreglo para que no ocurran repeticiones en las comparaciones.
+          //console.log(array[i]);
+          //array.splice(i, 1)//Borrando al elemento que ya se comparo con el resto del arreglo para que no ocurran repeticiones en las comparaciones.
         }
         console.log(arrayHighestToLowest);//Suma que devuleve la función al aplicar mySort.
       }
