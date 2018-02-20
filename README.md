@@ -1,4 +1,4 @@
-# Ejercicios: Métodos de arreglo
+# Ejercicios: https://docs.google.com/document/d/193aobPBsGXeVcEmueO1Jgt--6clI5eL2jGyKKysquRo/edit
 
 No se puede:
 Usar el método .forEach , .map , .reduce, filter
@@ -26,4 +26,4 @@ Bonus:
 
   `function miSort(arreglo, callback){ // completa aqui }`
 
-[Liga del ejercicio](#https://docs.google.com/document/d/193aobPBsGXeVcEmueO1Jgt--6clI5eL2jGyKKysquRo/edit)
+[Liga del ejercicio](https://docs.google.com/document/d/193aobPBsGXeVcEmueO1Jgt--6clI5eL2jGyKKysquRo/edit)
