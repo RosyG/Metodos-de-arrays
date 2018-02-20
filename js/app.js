@@ -71,3 +71,34 @@
       sumElement += n;
       return sumElement
     }
+
+    /*BONUS:*/
+    //1) Crea tu propia función sort.
+    var arrayHighestToLowest = [];
+    function mySort(array, callback){
+        // completa aqui
+        for (var i = 0; i < array.length; i) {
+          //El arreglo no incrementa porque al hacer un splice en la línea 89, el siguiente elemento a comparar es 0, ya que el anterior fue borrado.
+          for (var j = 0; j < array.length; j++) {
+            console.log(array[i]);
+            console.log(array[j]);
+
+            callback(array[i],array[j])//Pasando como parametro el 1er elemento para comparar con el resto de los elementos del array.
+          }
+          console.log(array[i]);
+          array.splice(i, 1)//Borrando al elemento que ya se comparo con el resto del arreglo para que no ocurran repeticiones en las comparaciones.
+        }
+        console.log(arrayHighestToLowest);//Suma que devuleve la función al aplicar mySort.
+      }
+
+      mySort([1, 2,3], toHighestToLowest)
+
+      //Definiendo la función que obtiene el cubo de cada elemento del array.
+      function toHighestToLowest(first, sweep) {
+        if (first >= sweep) {
+          arrayHighestToLowest.unshift(first);//Si es mayor el elemento que se esta comparando, se añade al principio del array.
+          console.log(arrayHighestToLowest);
+        }
+        // arrayHighestToLowest.push();
+        // return arrayHighestToLowest
+      }
